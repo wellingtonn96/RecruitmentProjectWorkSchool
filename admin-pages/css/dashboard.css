@@ -1,0 +1,428 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    margin: 0;
+  }
+
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: #5bb69f;
+}
+
+a:hover {
+  color: #5bb69f;
+}
+
+.text-primary {
+  color: #5bb69f !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+body h1, h2, h3, p, ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {box-sizing: border-box;}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+  
+::-webkit-scrollbar {
+  width: 8px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #4da08b;
+}
+  
+::selection {
+  background: #55e4c0;
+  text-shadow: none
+}
+  
+/*--------------------------------------------------------------*/
+
+
+/*header*/
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin: 0 auto;
+  position: fixed;
+  display: flex;
+  box-shadow: 3px 7px 12px #cacaca;
+}
+
+.logo {
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  flex-grow: 1;
+}
+
+.logo a {
+  font-size: 1.75em;
+  color: #15b49f;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+.nav-menu i {
+  font-size: 1.25em;
+  color: #15b49f;
+  padding: 0 8px
+}
+
+.nav-menu ul {
+  padding: 18px;
+  list-style: none;
+  display: flex;
+}
+
+
+.nav-menu i:hover {
+  color: #5bb69f
+}
+
+.fa-bars {
+  font-size: 22px
+}
+
+
+
+/*main-container*/
+
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
+/*side-bar*/
+
+.side-nav{
+    background:  #4da08b;
+    margin-top: 60px;
+    position: fixed;
+    width: 100%
+}
+
+.side-nav a{
+  display: block;
+  padding: 15px;
+  font-weight: 500;
+  color: #ddfff7;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-bottom: 2px solid #15b49f
+}
+
+.side-nav i{
+  margin-right: 10px;
+  color: #ddfff7
+}
+
+.side-nav a:hover{
+  background: #397566;
+}
+
+.side-nav {
+  display: none
+}
+
+@media(min-width: 922px) {
+  .side-nav{
+    width: 15%;
+    height: calc(100vh - 60px);
+    display: block;
+  }
+}
+
+/*container*/
+.container {
+  padding: 20px;
+}
+
+
+/*content*/
+.content {
+  width: 100%;
+  margin-top: 60px;
+  background-color: #ececec
+}
+
+
+@media(min-width: 922px){
+  .content {
+    width: 85%;
+    margin-left: 15%
+  }
+}
+
+/*breadcrumb-content*/
+
+.breadcrumb-content {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  width: calc(100%-20px);
+  background: white;
+  padding: 15px;
+  color: #333333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 5px 10px 18px #cacaca;
+}
+
+.breadcrumb-content-item {
+  margin-left: 10px;
+  list-style: none;
+  color:  #666666
+}
+
+.breadcrumb-content-item::before {
+  content: "/";
+  margin-right: 8px;
+  font-weight: 900
+}
+
+
+/* cards */
+
+.flex-container {
+  display: flex;
+  flex-direction: column
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 18px #cacaca;
+}
+
+@media (min-width: 922px){
+  .flex-container {
+    flex-direction: row
+  }
+
+  .flex-container > div {
+    width: 260px;
+  }
+}
+
+
+.card-icon {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  margin-right: 1em;
+  text-align: center;
+}
+
+
+.card-icon::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.card-icon i {
+  color: white;
+  font-size: 1.25em;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.card-text {
+  float: right;
+  text-align: center
+}
+
+.card-heading {
+  font-size: 23px;
+  font-weight: 600
+}
+
+.card-subheading {
+  font-size: 20px;
+}
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding: 15px;
+  color: #666666;
+}
+
+
+/*tabela*/
+
+.table-content {
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  background: white;
+}
+
+.table td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+
+.table tr:nth-child(even) {
+  background-color: #cacaca
+}
+
+/*card component*/
+.card-content {
+  background: white;
+  box-shadow: 5px 10px 18px #cacaca;
+  border-radius: 10px
+}
+
+.card-head {
+  background: #00806f;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-weight: 500;
+  font-size: 18px
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-head i {
+  margin-right: 10px
+}
+
+/*tela de login*/
+
+.login {
+  width: 450px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 15px #31947b;
+  color: #666666;
+}
+
+.form label {
+  color: #666666;
+  padding: 0 10px;
+}
+
+
+
+.login-header {
+  font-size: 50px;
+  padding: 10px;
+  color: white;
+  background: #4da08b;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.form {
+  padding: 20px;
+}
+
+.form input:focus {
+  box-shadow: #ccc;
+  border: 3px solid #ccc
+}
+
+
+.input-form input {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background: none;
+  margin-top: 20px
+}
+
+.btn-login{
+  font-size: 15px;
+  width: 100%;
+  background-color: #4da08b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #397566
+}
+
+.links-login {
+  padding: 5px;
+  font-size: 15px;
+  text-align: right
+}
+
+.links-login a{
+  padding: 5px;
+}
+
+
+/*-----------------------------------------------------------------*/
