@@ -1,3 +1,3 @@
-# Trabalho TCC senac
+# Project TCC senac
 
-Trabalho para conclusão de curso uma aplicação para auxiliar empresas no processo de recrutamento seleção.
+Project for school completion an application an application to assist companies in the candidate selection recruitment process..
