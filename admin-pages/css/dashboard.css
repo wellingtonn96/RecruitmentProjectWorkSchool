@@ -10,15 +10,15 @@ p {
 }
 
 a {
-  color: #5bb69f;
+  color: #3782c8;
 }
 
 a:hover {
-  color: #5bb69f;
+  color: #3782c8;
 }
 
 .text-primary {
-  color: #5bb69f !important;
+  color: #3782c8 !important;
 }
 
 h1,
@@ -60,11 +60,11 @@ a{
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  background: #4da08b;
+  background: #3782c8;
 }
   
 ::selection {
-  background: #55e4c0;
+  background: #3782c8;
   text-shadow: none
 }
   
@@ -75,12 +75,17 @@ a{
 
 .header {
   width: 100%;
-  height: 60px;
-  background-color: white;
+  height: 70px;
+  background-color: #494949;
   margin: 0 auto;
   position: fixed;
   display: flex;
-  box-shadow: 3px 7px 12px #cacaca;
+  box-shadow: 3px 7px 12px #777777;
+}
+
+#logo {
+  width: 120px;
+  height: 60px;
 }
 
 .logo {
@@ -92,7 +97,7 @@ a{
 
 .logo a {
   font-size: 1.75em;
-  color: #15b49f;
+  color: #3782c8;
   text-decoration: none;
   font-weight: 500;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -100,8 +105,9 @@ a{
 
 
 .nav-menu i {
+  margin-top: 8px;
   font-size: 1.25em;
-  color: #15b49f;
+  color: #d4d4d4;
   padding: 0 8px
 }
 
@@ -113,7 +119,7 @@ a{
 
 
 .nav-menu i:hover {
-  color: #5bb69f
+  color: #3782c8
 }
 
 .fa-bars {
@@ -132,8 +138,8 @@ a{
 /*side-bar*/
 
 .side-nav{
-    background:  #4da08b;
-    margin-top: 60px;
+    background: #505050;
+    margin-top: 70px;
     position: fixed;
     width: 100%
 }
@@ -142,19 +148,18 @@ a{
   display: block;
   padding: 15px;
   font-weight: 500;
-  color: #ddfff7;
+  color: #ffffff;
   text-decoration: none;
-  text-transform: capitalize;
-  border-bottom: 2px solid #15b49f
+  text-transform: capitalize
 }
 
 .side-nav i{
   margin-right: 10px;
-  color: #ddfff7
+  color: #ffffff
 }
 
 .side-nav a:hover{
-  background: #397566;
+  background: #3782c8;
 }
 
 .side-nav {
@@ -330,7 +335,7 @@ a{
 }
 
 .card-head {
-  background: #00806f;
+  background: #3782c8;
   color: white;
   padding: 10px;
   border-radius: 10px 10px 0 0;
@@ -354,7 +359,7 @@ a{
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 20px;
-  box-shadow: 5px 10px 15px #31947b;
+  box-shadow: 5px 10px 15px #2e2e2e;
   color: #666666;
 }
 
@@ -367,14 +372,16 @@ a{
 
 .login-header {
   font-size: 50px;
-  padding: 10px;
+  padding: 25px;
   color: white;
-  background: #4da08b;
+  background: #505050;
   border-radius: 20px 20px 0 0;
   text-align: center;
   font-weight: 500;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
 
 .form {
   padding: 20px;
@@ -401,7 +408,7 @@ a{
 .btn-login{
   font-size: 15px;
   width: 100%;
-  background-color: #4da08b;
+  background-color: #3782c8;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -411,7 +418,7 @@ a{
 }
 
 .btn-login:hover {
-  background: #397566
+  background-color: #2968a3;
 }
 
 .links-login {
