@@ -106,7 +106,7 @@ a{
 
 .nav-menu i {
   margin-top: 8px;
-  font-size: 1.25em;
+  font-size: 16px;
   color: #d4d4d4;
   padding: 0 8px
 }
@@ -284,12 +284,12 @@ a{
 }
 
 .card-heading {
-  font-size: 23px;
+  font-size: 16px;
   font-weight: 600
 }
 
 .card-subheading {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /*footer*/
