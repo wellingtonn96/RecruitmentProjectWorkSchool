@@ -141,25 +141,28 @@ a{
     background: #505050;
     margin-top: 70px;
     position: fixed;
-    width: 100%
+    width: 100%;
+    font-size: 14px;
+    color: gray
 }
 
 .side-nav a{
   display: block;
   padding: 15px;
   font-weight: 500;
-  color: #ffffff;
+  color: #cccccc;
   text-decoration: none;
   text-transform: capitalize
 }
 
 .side-nav i{
   margin-right: 10px;
-  color: #ffffff
+  color: #cccccc;
 }
 
 .side-nav a:hover{
   background: #3782c8;
+  color: #ffffff
 }
 
 .side-nav {
@@ -374,7 +377,7 @@ a{
   font-size: 50px;
   padding: 25px;
   color: white;
-  background: #505050;
+  background: #3782c8;
   border-radius: 20px 20px 0 0;
   text-align: center;
   font-weight: 500;
